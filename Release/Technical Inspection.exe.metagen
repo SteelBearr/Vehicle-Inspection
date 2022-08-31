@@ -1,0 +1,137 @@
+  TechnicalInspection.fCreate.resources - Embedded, ContainedInManifestFile, 
+  TechnicalInspection.MyForm.resources - Embedded, ContainedInManifestFile, 
+  TechnicalInspection.MyForm1.resources - Embedded, ContainedInManifestFile, 
+ImageRuntimeVersion: v4.0.30319
+Assembly Technical Inspection, Version=0.0.*, Culture=Инвариантный язык (Инвариантная страна): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class TechnicalInspection.MyForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.Windows.Forms.PictureBox pBBackground : Public, Static
+    System.Windows.Forms.PictureBox pBMachine : Public, Static
+    System.Windows.Forms.PictureBox pBTool : Public, Static
+    System.Windows.Forms.Button btnBegin : Public, Static
+    System.Windows.Forms.Timer tspeed : Public, Static
+    System.Windows.Forms.Label lSpeed : Public, Static
+    System.Windows.Forms.ProgressBar progressBar1 : Public, Static
+    System.Windows.Forms.TrackBar tBSpeed : Public, Static
+    System.Windows.Forms.Timer tPB : Public, Static
+    System.Windows.Forms.Label lSpeedVal : Public, Static
+    System.Windows.Forms.ComboBox cBMachine : Public, Static
+    System.Windows.Forms.ComboBox cBColor : Public, Static
+    System.Windows.Forms.Button btnCreate : Public, Static
+    System.Windows.Forms.Button btnCreateRandom : Public, Static
+    System.Windows.Forms.TextBox textBox1 : Public, Static
+    System.String Machine : Public, Static
+    System.String color : Public, Static
+    Int32 cb1 : Public, Static
+    Int32 cb2 : Public, Static
+    Int32 currentTool : Public, Static
+    Car car : Public, Static
+Class TechnicalInspection.MyForm+inspection: AutoLayout, AnsiClass, Class, NestedPublic, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class TechnicalInspection.MyForm+movement: AutoLayout, AnsiClass, Class, NestedPublic, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class TechnicalInspection.MyForm+ECB: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Events:
+    movement mov: SpecialName
+    inspection inspect: SpecialName
+  Methods:
+    add_inspect(inspection): PrivateScope, Public, Static, HideBySig, SpecialName
+    remove_inspect(inspection): PrivateScope, Public, Static, HideBySig, SpecialName
+    add_mov(movement): PrivateScope, Public, Static, HideBySig, SpecialName
+    remove_mov(movement): PrivateScope, Public, Static, HideBySig, SpecialName
+    check(Int32): PrivateScope, Public, HideBySig
+    drive(Int32): PrivateScope, Public, HideBySig
+    getErrors(): PrivateScope, Public, HideBySig
+    addError(String): PrivateScope, Public, HideBySig
+Class TechnicalInspection.MyForm+Trans: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Events:
+    movement mov: SpecialName
+    inspection inspect: SpecialName
+  Methods:
+    add_inspect(inspection): PrivateScope, Public, Static, HideBySig, SpecialName
+    remove_inspect(inspection): PrivateScope, Public, Static, HideBySig, SpecialName
+    add_mov(movement): PrivateScope, Public, Static, HideBySig, SpecialName
+    remove_mov(movement): PrivateScope, Public, Static, HideBySig, SpecialName
+    check(Int32): PrivateScope, Public, HideBySig
+    drive(Int32): PrivateScope, Public, HideBySig
+    getStat(Int32): PrivateScope, Public, HideBySig
+    setStat(Int32, Single): PrivateScope, Public, HideBySig
+Class TechnicalInspection.MyForm+Susp: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Events:
+    movement mov: SpecialName
+    inspection inspect: SpecialName
+  Methods:
+    add_inspect(inspection): PrivateScope, Public, Static, HideBySig, SpecialName
+    remove_inspect(inspection): PrivateScope, Public, Static, HideBySig, SpecialName
+    add_mov(movement): PrivateScope, Public, Static, HideBySig, SpecialName
+    remove_mov(movement): PrivateScope, Public, Static, HideBySig, SpecialName
+    check(Int32): PrivateScope, Public, HideBySig
+    drive(Int32): PrivateScope, Public, HideBySig
+    getStat(Int32): PrivateScope, Public, HideBySig
+    setStat(Int32, Single): PrivateScope, Public, HideBySig
+Class TechnicalInspection.MyForm+Engine: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Events:
+    movement mov: SpecialName
+    inspection inspect: SpecialName
+  Methods:
+    add_inspect(inspection): PrivateScope, Public, Static, HideBySig, SpecialName
+    remove_inspect(inspection): PrivateScope, Public, Static, HideBySig, SpecialName
+    add_mov(movement): PrivateScope, Public, Static, HideBySig, SpecialName
+    remove_mov(movement): PrivateScope, Public, Static, HideBySig, SpecialName
+    check(Int32): PrivateScope, Public, HideBySig
+    drive(Int32): PrivateScope, Public, HideBySig
+    getStat(Int32): PrivateScope, Public, HideBySig
+    setStat(Int32, Single): PrivateScope, Public, HideBySig
+Class TechnicalInspection.MyForm+Car: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+    Void .ctor(ECB, Trans, Susp, Engine, System.String, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    getECB(): PrivateScope, Public, HideBySig
+    getTrans(): PrivateScope, Public, HideBySig
+    getSusp(): PrivateScope, Public, HideBySig
+    getEngine(): PrivateScope, Public, HideBySig
+    getType(): PrivateScope, Public, HideBySig
+    getColor(): PrivateScope, Public, HideBySig
+    moveX(Int32): PrivateScope, Public, HideBySig
+    moveY(Int32): PrivateScope, Public, HideBySig
+    getX(): PrivateScope, Public, HideBySig
+    getY(): PrivateScope, Public, HideBySig
+Class TechnicalInspection.fCreate: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(TechnicalInspection.MyForm): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    ECB iecb : Public, Static
+    Trans itrans : Public, Static
+    Susp isusp : Public, Static
+    Engine iengine : Public, Static
+Class TechnicalInspection.MyForm1: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(TechnicalInspection.MyForm): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
